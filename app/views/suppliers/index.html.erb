@@ -1,0 +1,12 @@
+<h1>Index</h1>
+<table border="5px" cellpadding="5px" cellspacing="5px">
+	<tr>
+		<td>Name</td>
+	</tr>
+	<tr>
+		<%@suppliers.each do |s|%>
+		<td><%= s.name%></td>
+	</tr>
+	<%end%>
+</table>
+<%= link_to "Add New Supplier",new_supplier_path%>
